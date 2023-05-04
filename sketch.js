@@ -42,7 +42,8 @@ function draw() {
   edges= createEdgeSprites();
   boy.collide(edges[3]);
   // colidir o menino com os limites invisíveis da esquerda e da direita
-  
+  boy.collide(rightBoundary);
+  boy.collide(leftBoundary);
   //código para redefinir o fundo
   if(path.y > 400 ){
     path.y = height/2;
